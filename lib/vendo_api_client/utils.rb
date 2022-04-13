@@ -21,7 +21,7 @@ module VendoApiClient
     end
 
     def delete(path, options = {}, _headers = {})
-      equest(:delete, path, options)
+      request(:delete, path, options)
     end
 
     def request(method, path, options = {}, headers = {})
