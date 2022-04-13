@@ -22,7 +22,7 @@ describe VendoApiClient::Client do
     context "#retrieves" do
       it "successfully retrieves a cart" do
         response = @client.retrieve_cart
-        expect(response.to_json).to eq(fixture('empty_cart.json'))
+        expect(response).to eq(fixture("empty_cart.json"))
       end
     end
   end
